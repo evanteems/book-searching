@@ -1,8 +1,9 @@
+// React Imports here!!!
 import React, { useState, useEffect } from 'react';
 import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
 
 import Auth from '../utils/auth';
-import { savedBook } from '../utils/mutations';
+import { savedBook } from '../utils/mutations.js';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 import { useMutation } from '@apollo/react-hooks';
 import { SAVE_BOOK } from '../utils/mutations';
@@ -18,13 +19,10 @@ const SearchBooks = () => {
 
   const [savedBook, {err}] = useMutation(SAVE_BOOK);
 
-  // set up useEffect hook to save `savedBookIds` list to localStorage on component unmount
-  // learn more here: https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup
   useEffect(() => {
     return () => saveBookIds(savedBookIds);
   });
 
-  // create method to search for books and set state on form submit
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 

@@ -1,4 +1,4 @@
-# Book Search Hunt ![Github License](https://img.shields.io/badge/license-MIT-red.svg)
+# Book Searching ![Github License](https://img.shields.io/badge/license-MIT-red.svg)
   
 ## Description
 Looking up books and saving them
@@ -29,8 +29,7 @@ Looking up books and saving them
 * [Email](https://evanteems40@yahoo.com) evanteems40@yahoo.com
 
 
-### https://book-hunt-search.herokuapp.com/
-### https://github.com/evanteems/book-search-hunt
-### https://evanteems.github.io/book-search-hunt/
+### https://github.com/evanteems/book-searching
+### https://evanteems.github.io/book-searching/
 ### https://github.com/evanteems
 
